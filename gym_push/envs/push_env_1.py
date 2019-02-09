@@ -28,7 +28,7 @@ class PushEnv1(gym.Env):
         
         dir_path = os.path.dirname(os.path.realpath(__file__))
         # ------------ load data ------------------#
-        self.loaded_notifications = pd.read_csv(dir_path+'./notifications.csv' )
+        self.loaded_notifications = pd.read_csv(dir_path+'/notifications.csv' )
         # Add 'cached' identifier
         self.loaded_notifications['cached'] = False
         self.loaded_notifications['numCaches'] = 0
