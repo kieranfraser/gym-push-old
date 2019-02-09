@@ -16,5 +16,4 @@ import gym_push
 env = gym.make('push-v0')
 ```
 
-> Full example illustrated in **ExampleUsage.ipynb**
-> Environment explained in **Documentation.ipynb**
+> Full example illustrated in **ExampleUsage.ipynb** & environment explained in **Documentation.ipynb**
