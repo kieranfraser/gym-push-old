@@ -50,8 +50,9 @@ To be added.
   * **Notification:** 	{_postingApp, category, numberOfUpdates, subject, priority, ongoing, visibility_}
   * **Context:** 	{_day, time, place, activity, noise, batteryLevel, charging, headphonesIn,			 musicActive, proximity, ringerMode_}
 
-The values for each feature are also strictly limited to the sets provided [ref].
-For challenge 2, engagement history will also be available to the user model wishing to adapt in real time. Engagement history will be represented by the union of Notification and Context features (same as above) as well as an additional feature 'action', which conveys whether the notification was 'opened' or 'dismissed'.
+* The values for each feature are also strictly limited to the sets provided [ref].
+* For challenge 2, engagement history will also be available to the user model wishing to adapt in real time. Engagement history will be returned by the environment (as well as the context), when the environment is queried.
+* Engagement history will be represented by the union of Notification and Context features (same as above) as well as an additional feature 'action', which conveys whether the notification was 'opened' or 'dismissed'.
 
 
 ##### 4. Using gym-push
