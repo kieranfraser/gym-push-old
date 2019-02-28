@@ -40,7 +40,7 @@ As the environment steps through each context item and engagement history become
 
 ##### 2. Data
 
-The data for the challenge can be found in the _data_ folder. Each folder therein contains 3 months of synthetic notification and context data for each user which can be used for creating the personalised model. 
+The data for the challenge can be found in the _data_ folder. Each folder therein contains 3 months of synthetic notification and context data for each user which can be used for creating the personalised model. A detailed breakdown of the features can be found in data/detail.ipynb.
 
 ##### 3. Model Guidelines
 
