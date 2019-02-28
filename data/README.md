@@ -5,7 +5,7 @@ Feature descriptions of the notification and context data for each user.
 ### 1. Feature detail of _notifications.csv_
 * __appPackage__ - The app which posted the notification.
 Unique values: 
-       ```sh
+       ```
        ['com.google.android.gm', 'com.tinder', 'com.facebook.katana',
        'com.spotify.music', 'com.samsung.android.scloud',
        'com.microsoft.office.outlook', 'com.instagram.android',
@@ -59,20 +59,20 @@ Unique values:
 
 * __category__ - The category of the notification, as set by the posting app.
 Unique values: 
-       ```sh
+       ```
        ['email', 'unknown', 'msg', 'transport', 'event', 'status', 'call',
        'alarm', 'recommendation', 'err', 'service', 'reminder']
        ```
 
 * __numberOfUpdates__ - The number of times the posting app updated the contents of the notification.
 Unique values: 
-        ```sh
+        ```
        ['none', 'low', 'medium', 'high']
        ```
         
 * __subject__ - The subject of the notification content.
 Unique values:
-        ```sh
+        ```
        ['unknown', 'online communities', 'web services', 'education',
        'reference', 'politics', 'air travel', 'computer science',
        'computers & electronics', 'tv shows & programs',
@@ -150,19 +150,19 @@ Unique values:
        
 * __priority__ - The priority of the notification as set by the posting app.
 Unique values:
-        ```sh
+        ```
        ['default', 'high', 'max', 'low', 'unknown', 'min']
        ```
         
 * __ongoing__ - Whether or not notification is classified as _ongoing_ such that it stays in the notification bar as a task completes.
 Unique values: 
-        ```sh
+        ```
        [False, True]
        ```
         
 * __visibility__ - The visibility level of the notification as set by the posting app. _Private_ = Show this notification on all lockscreens, but conceal sensitive or private information on secure lockscreens; _Public_ = Show this notification in its entirety on all lockscreens; _Secret_ = Do not reveal any part of this notification on a secure lockscreen.
 Unique values:
-        ```sh
+        ```
        ['private', 'public', 'secret']
        ```
         
@@ -171,65 +171,65 @@ Unique values:
 
 * _day_ - The day the notification was posted. 0 = Monday; 6 = Sunday.
 Unique values: 
-        ```sh
+        ```
        [0, 1, 2, 3, 4, 5, 6]
        ```
     
 * _time_ - The time of the day the notification was posted. Unique values:
-        ```sh
+        ```
        ['night', 'morning', 'afternoon', 'evening', 'early-morning']
        ```
         
 * _place_ - The type of place in which the notification was received. Unique values:
-        ```sh
+        ```
        ['TYPE_ACCOUNTING', 'TYPE_AIRPORT', 'TYPE_AMUSEMENT_PARK', 'TYPE_AQUARIUM',
          'TYPE_ART_GALLERY', 'TYPE_ATM', 'TYPE_BAKERY', 'TYPE_BANK', 'TYPE_BAR',
          'TYPE_OTHER']
        ```
          
 * _activity_ - The activity identified by the device when the notification was posted. Unique values:
-        ```sh
+        ```
        ['still', 'unknown', 'foot walking', 'vehicle', 'tilting',
        'foot running', 'bicycle']
        ```
        
 * _noise_ - The average noise (over 5 seconds) of the surrounding environment when the notification was posted. Unique values:
-        ```sh
+        ```
        ['low', 'medium', 'high']
        ```
         
 * _batteryLevel_ - The battery level of the device when the notification was posted. Unique values:
-        ```sh
+        ```
        ['low', 'high', 'medium']
        ```
         
 * _charging_ - Whether or not the device was charging when the notification was posted. Unique values:
-        ```sh
+        ```
        [True, False]
        ```
         
 * _headphonesIn_ - Whether or not the headphones were connected to the device when the notification was posted. Unique values:
-        ```sh
+        ```
        [False,  True]
        ```
    
 * _musicActive_ - Whether or not the device was playing music when the notification was posted. Unique values:
-        ```sh
+        ```
        [False,  True]
        ```
         
 * _proximity_ - Level of how close something was to the front of the device when the notification was posted, ranging from near to medium to far. Unique values:
-        ```sh
+        ```
        ['med', 'near', 'far']
        ```
         
 * _ringerMode_ - The ringer mode of the device when the notification was posted. Unique values:
-        ```sh
+        ```
        ['vibrate', 'normal', 'silent']
        ```
         
 * _lightIntensity_ - The level of light ambience sensed by the device when the notification was posted. Unique values:
-        ```sh
+        ```
        ['low', 'med', 'high']
        ```
         
@@ -237,81 +237,81 @@ Unique values:
 ### 3. Feature detail of *context_on_removal.csv*
        
 * _activity_ - The activity identified by the device when the notification was posted. Unique values:
-       ```sh
+       ```
        ['still', 'unknown', 'vehicle', 'tilting', 'foot walking',
        'bicycle']
        ```
        
 * _noise_ - The average noise (over 5 seconds) of the surrounding environment when the notification was posted. Unique values:
-        ```sh
+        ```
        ['low', 'medium', 'high']
        ```
         
 * _batteryLevel_ - The battery level of the device when the notification was posted. Unique values:
-        ```sh
+        ```
        ['low', 'high', 'medium']
        ```
         
 * _charging_ - Whether or not the device was charging when the notification was posted. Unique values:
-        ```sh
+        ```
        [True, False]
        ```
         
 * _contactSignificantContext_ - Whether or not the contact sending the notification was significant to the context. Unique values:
-        ```sh
+        ```
        [True, False]
        ```
         
 * _contactSignificantOverall_ - Whether or not the contact sending the notification was significant to the user based on the history of previous notifications opened/dismissed. Unique values:
-         ```sh
+         ```
        [True, False]
        ```
          
 * _decisionTime_ - The time taken (in seconds) from when the user saw the new notification to when they acted upon it (opened/dismissed it).
         
 * _headphonesIn_ - Whether or not the headphones were connected to the device when the notification was posted. Unique values:
-        ```sh
+        ```
        [False,  True]
        ```
         
 * _lightIntensity_ - The level of light ambience sensed by the device when the notification was posted. Unique values:
-        ```sh
+        ```
        ['low', 'med', 'high']
        ```
    
 * _musicActive_ - Whether or not the device was playing music when the notification was posted. Unique values:
-        ```sh
+        ```
        [False,  True]
        ```
         
 * _place_ - The type of place in which the notification was received. Unique values:
-        ```sh
+        ```
        ['TYPE_ACCOUNTING', 'TYPE_AIRPORT', 'TYPE_AMUSEMENT_PARK', 'TYPE_AQUARIUM',
          'TYPE_ART_GALLERY', 'TYPE_ATM', 'TYPE_BAKERY', 'TYPE_BANK', 'TYPE_BAR',
          'TYPE_OTHER']
        ```
         
 * _proximity_ - Level of how close something was to the front of the device when the notification was posted, ranging from near to medium to far. Unique values:
-        ```sh
+        ```
        ['med', 'near', 'far']
        ```
         
 * _responseTime_ - The time taken (in seconds) from when the notification was posted to the device to when the user acted upon it (opened/dismissed it).
         
 * _ringerMode_ - The ringer mode of the device when the notification was posted. Unique values:
-        ```sh
+        ```
        ['vibrate', 'normal', 'silent']
        ```
         
 * _seenTime_ - The time taken (in seconds) from when the notification was posted to the device to when the user noticed it.
 
 * _action_ - The action taken by the user on the notification. _True_ = Notification opened; _False_ = Notification dismissed. Unique values:
-        ```sh
+        ```
        [True, False]
        ```
 
 * _timeAppLastUsed_ - The amount of time since the user last used the app which posted the notification. Unique values:
-        ```sh
+        ```
        ['over a week ago', 'within last week', 'immediate',
        'within half hour', 'within 24 hours', 'within hour', 'few hours',
        'few mins']
