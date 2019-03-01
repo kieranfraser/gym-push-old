@@ -169,66 +169,66 @@ Unique values:
         
 ### 2. Feature detail of *context_on_posting.csv*
 
-* _day_ - The day the notification was posted. 0 = Monday; 6 = Sunday.
+* __day__ - The day the notification was posted. 0 = Monday; 6 = Sunday.
 Unique values: 
         ```
        [0, 1, 2, 3, 4, 5, 6]
        ```
     
-* _time_ - The time of the day the notification was posted. Unique values:
+* __time__ - The time of the day the notification was posted. Unique values:
         ```
        ['night', 'morning', 'afternoon', 'evening', 'early-morning']
        ```
         
-* _place_ - The type of place in which the notification was received. Unique values:
+* __place__ - The type of place in which the notification was received. Unique values:
         ```
        ['TYPE_ACCOUNTING', 'TYPE_AIRPORT', 'TYPE_AMUSEMENT_PARK', 'TYPE_AQUARIUM',
          'TYPE_ART_GALLERY', 'TYPE_ATM', 'TYPE_BAKERY', 'TYPE_BANK', 'TYPE_BAR',
          'TYPE_OTHER']
        ```
          
-* _activity_ - The activity identified by the device when the notification was posted. Unique values:
+* __activity__ - The activity identified by the device when the notification was posted. Unique values:
         ```
        ['still', 'unknown', 'foot walking', 'vehicle', 'tilting',
        'foot running', 'bicycle']
        ```
        
-* _noise_ - The average noise (over 5 seconds) of the surrounding environment when the notification was posted. Unique values:
+* __noise__ - The average noise (over 5 seconds) of the surrounding environment when the notification was posted. Unique values:
         ```
        ['low', 'medium', 'high']
        ```
         
-* _batteryLevel_ - The battery level of the device when the notification was posted. Unique values:
+* __batteryLevel__ - The battery level of the device when the notification was posted. Unique values:
         ```
        ['low', 'high', 'medium']
        ```
         
-* _charging_ - Whether or not the device was charging when the notification was posted. Unique values:
+* __charging__ - Whether or not the device was charging when the notification was posted. Unique values:
         ```
        [True, False]
        ```
         
-* _headphonesIn_ - Whether or not the headphones were connected to the device when the notification was posted. Unique values:
+* __headphonesIn__ - Whether or not the headphones were connected to the device when the notification was posted. Unique values:
         ```
        [False,  True]
        ```
    
-* _musicActive_ - Whether or not the device was playing music when the notification was posted. Unique values:
+* __musicActive__ - Whether or not the device was playing music when the notification was posted. Unique values:
         ```
        [False,  True]
        ```
         
-* _proximity_ - Level of how close something was to the front of the device when the notification was posted, ranging from near to medium to far. Unique values:
+* __proximity__ - Level of how close something was to the front of the device when the notification was posted, ranging from near to medium to far. Unique values:
         ```
        ['med', 'near', 'far']
        ```
         
-* _ringerMode_ - The ringer mode of the device when the notification was posted. Unique values:
+* __ringerMode__ - The ringer mode of the device when the notification was posted. Unique values:
         ```
        ['vibrate', 'normal', 'silent']
        ```
         
-* _lightIntensity_ - The level of light ambience sensed by the device when the notification was posted. Unique values:
+* __lightIntensity__ - The level of light ambience sensed by the device when the notification was posted. Unique values:
         ```
        ['low', 'med', 'high']
        ```
@@ -236,87 +236,87 @@ Unique values:
         
 ### 3. Feature detail of *context_on_removal.csv*
        
-* _activity_ - The activity identified by the device when the notification was posted. Unique values:
+* __activity__ - The activity identified by the device when the notification was posted. Unique values:
        ```
        ['still', 'unknown', 'vehicle', 'tilting', 'foot walking',
        'bicycle']
        ```
        
-* _noise_ - The average noise (over 5 seconds) of the surrounding environment when the notification was posted. Unique values:
+* __noise__ - The average noise (over 5 seconds) of the surrounding environment when the notification was posted. Unique values:
         ```
        ['low', 'medium', 'high']
        ```
         
-* _batteryLevel_ - The battery level of the device when the notification was posted. Unique values:
+* __batteryLevel__ - The battery level of the device when the notification was posted. Unique values:
         ```
        ['low', 'high', 'medium']
        ```
         
-* _charging_ - Whether or not the device was charging when the notification was posted. Unique values:
+* __charging__ - Whether or not the device was charging when the notification was posted. Unique values:
         ```
        [True, False]
        ```
         
-* _contactSignificantContext_ - Whether or not the contact sending the notification was significant to the context. Unique values:
+* __contactSignificantContext__ - Whether or not the contact sending the notification was significant to the context. Unique values:
         ```
        [True, False]
        ```
         
-* _contactSignificantOverall_ - Whether or not the contact sending the notification was significant to the user based on the history of previous notifications opened/dismissed. Unique values:
+* __contactSignificantOverall__ - Whether or not the contact sending the notification was significant to the user based on the history of previous notifications opened/dismissed. Unique values:
          ```
        [True, False]
        ```
          
-* _decisionTime_ - The time taken (in seconds) from when the user saw the new notification to when they acted upon it (opened/dismissed it).
+* __decisionTime__ - The time taken (in seconds) from when the user saw the new notification to when they acted upon it (opened/dismissed it).
         
-* _headphonesIn_ - Whether or not the headphones were connected to the device when the notification was posted. Unique values:
+* __headphonesIn__ - Whether or not the headphones were connected to the device when the notification was posted. Unique values:
         ```
        [False,  True]
        ```
         
-* _lightIntensity_ - The level of light ambience sensed by the device when the notification was posted. Unique values:
+* __lightIntensity__ - The level of light ambience sensed by the device when the notification was posted. Unique values:
         ```
        ['low', 'med', 'high']
        ```
    
-* _musicActive_ - Whether or not the device was playing music when the notification was posted. Unique values:
+* __musicActive__ - Whether or not the device was playing music when the notification was posted. Unique values:
         ```
        [False,  True]
        ```
         
-* _place_ - The type of place in which the notification was received. Unique values:
+* __place__ - The type of place in which the notification was received. Unique values:
         ```
        ['TYPE_ACCOUNTING', 'TYPE_AIRPORT', 'TYPE_AMUSEMENT_PARK', 'TYPE_AQUARIUM',
          'TYPE_ART_GALLERY', 'TYPE_ATM', 'TYPE_BAKERY', 'TYPE_BANK', 'TYPE_BAR',
          'TYPE_OTHER']
        ```
         
-* _proximity_ - Level of how close something was to the front of the device when the notification was posted, ranging from near to medium to far. Unique values:
+* __proximity__ - Level of how close something was to the front of the device when the notification was posted, ranging from near to medium to far. Unique values:
         ```
        ['med', 'near', 'far']
        ```
         
-* _responseTime_ - The time taken (in seconds) from when the notification was posted to the device to when the user acted upon it (opened/dismissed it).
+* __responseTime__ - The time taken (in seconds) from when the notification was posted to the device to when the user acted upon it (opened/dismissed it).
         
-* _ringerMode_ - The ringer mode of the device when the notification was posted. Unique values:
+* __ringerMode__ - The ringer mode of the device when the notification was posted. Unique values:
         ```
        ['vibrate', 'normal', 'silent']
        ```
         
-* _seenTime_ - The time taken (in seconds) from when the notification was posted to the device to when the user noticed it.
+* __seenTime__ - The time taken (in seconds) from when the notification was posted to the device to when the user noticed it.
 
-* _action_ - The action taken by the user on the notification. _True_ = Notification opened; _False_ = Notification dismissed. Unique values:
+* __action__ - The action taken by the user on the notification. _True_ = Notification opened; _False_ = Notification dismissed. Unique values:
         ```
        [True, False]
        ```
 
-* _timeAppLastUsed_ - The amount of time since the user last used the app which posted the notification. Unique values:
+* __timeAppLastUsed__ - The amount of time since the user last used the app which posted the notification. Unique values:
         ```
        ['over a week ago', 'within last week', 'immediate',
        'within half hour', 'within 24 hours', 'within hour', 'few hours',
        'few mins']
        ```
      
-* _postDate_ - The datetime the notification was posted to the device.
+* __postDate__ - The datetime the notification was posted to the device.
 
-* _removedDate_ - The datetime the notification was removed from the device.
+* __removedDate__ - The datetime the notification was removed from the device.
