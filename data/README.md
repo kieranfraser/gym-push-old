@@ -1,6 +1,11 @@
 # Breakdown of Data
-Feature descriptions of the notification and context data for each user.
----
+
+***
+The following contains feature information with regard the _notification_ and _context_ csv files.
+* _notification.csv_ - Contains the features of the notifications which arrived to the device.
+* **context_on_posting.csv** - Contains features of the context at the moment the notification arrived (was posted to) the device. 
+* **context_on_removal.csv** - Contains features of the context at the moment the notification was removed from the device (i.e. the moment it was acted upon, opened or dismissed by the user).
+***
 
 ### 1. Feature detail of _notifications.csv_
 * __appPackage__ - The app which posted the notification.
